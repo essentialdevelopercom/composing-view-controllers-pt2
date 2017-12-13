@@ -10,11 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PlayerOne-->
+        <!--Player-->
         <scene sceneID="9Nh-vq-fpQ">
             <objects>
                 <viewControllerPlaceholder storyboardName="PlayerOne" id="QnW-Db-JE6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5t-EF-J7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="cA4-ha-VUC" customClass="SinglePlayerViewControllerStoryboardConfigurator" customModule="VCCompositionWithStoryboards" customModuleProvider="target">
+                    <connections>
+                        <outlet property="player" destination="QnW-Db-JE6" id="gIg-b3-tgn"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-10" y="-237"/>
         </scene>
