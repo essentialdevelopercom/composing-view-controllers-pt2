@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08577AE31FE1A836004B1CD4 /* PlayerScoreViewControllerStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08577AE21FE1A836004B1CD4 /* PlayerScoreViewControllerStoryboardTests.swift */; };
 		0893A5731FCF12AC0095E7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893A5721FCF12AC0095E7D0 /* AppDelegate.swift */; };
 		0893A5781FCF12AC0095E7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893A5761FCF12AC0095E7D0 /* Main.storyboard */; };
 		0893A57A1FCF12AC0095E7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0893A5791FCF12AC0095E7D0 /* Assets.xcassets */; };
 		0893A57D1FCF12AC0095E7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893A57B1FCF12AC0095E7D0 /* LaunchScreen.storyboard */; };
-		0893A5881FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893A5871FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests.swift */; };
 		0893A5941FCF13550095E7D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0893A5931FCF13550095E7D0 /* Default-568h@2x.png */; };
 		0893A5961FCF16710095E7D0 /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893A5951FCF16710095E7D0 /* SinglePlayerViewController.swift */; };
 		0893A5981FCF16F70095E7D0 /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893A5971FCF16F70095E7D0 /* MultiplayerViewController.swift */; };
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08577AE21FE1A836004B1CD4 /* PlayerScoreViewControllerStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreViewControllerStoryboardTests.swift; sourceTree = "<group>"; };
 		0893A56F1FCF12AC0095E7D0 /* VCCompositionWithStoryboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCompositionWithStoryboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0893A5721FCF12AC0095E7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0893A5771FCF12AC0095E7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		0893A57C1FCF12AC0095E7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0893A57E1FCF12AC0095E7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0893A5831FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCCompositionWithStoryboardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0893A5871FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCompositionWithStoryboardsTests.swift; sourceTree = "<group>"; };
 		0893A5891FCF12AC0095E7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0893A5931FCF13550095E7D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0893A5951FCF16710095E7D0 /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 		0893A5861FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests */ = {
 			isa = PBXGroup;
 			children = (
-				0893A5871FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests.swift */,
 				0893A5891FCF12AC0095E7D0 /* Info.plist */,
+				08577AE21FE1A836004B1CD4 /* PlayerScoreViewControllerStoryboardTests.swift */,
 			);
 			path = VCCompositionWithStoryboardsTests;
 			sourceTree = "<group>";
@@ -197,6 +197,7 @@
 					};
 					0893A5821FCF12AC0095E7D0 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0893A56E1FCF12AC0095E7D0;
 					};
@@ -268,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0893A5881FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests.swift in Sources */,
+				08577AE31FE1A836004B1CD4 /* PlayerScoreViewControllerStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,12 +445,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VRJ2W4578X;
 				INFOPLIST_FILE = VCCompositionWithStoryboardsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.essentialdeveloper.VCCompositionWithStoryboardsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VCCompositionWithStoryboards.app/VCCompositionWithStoryboards";
@@ -461,6 +464,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VRJ2W4578X;
 				INFOPLIST_FILE = VCCompositionWithStoryboardsTests/Info.plist;
