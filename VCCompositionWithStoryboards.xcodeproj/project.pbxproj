@@ -85,7 +85,6 @@
 		0893A5661FCF12AC0095E7D0 = {
 			isa = PBXGroup;
 			children = (
-				0893A5931FCF13550095E7D0 /* Default-568h@2x.png */,
 				0893A5711FCF12AC0095E7D0 /* VCCompositionWithStoryboards */,
 				0893A5861FCF12AC0095E7D0 /* VCCompositionWithStoryboardsTests */,
 				0893A5701FCF12AC0095E7D0 /* Products */,
@@ -136,6 +135,7 @@
 		0893A5921FCF12C40095E7D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0893A5931FCF13550095E7D0 /* Default-568h@2x.png */,
 				0893A5791FCF12AC0095E7D0 /* Assets.xcassets */,
 				0893A57B1FCF12AC0095E7D0 /* LaunchScreen.storyboard */,
 				0893A57E1FCF12AC0095E7D0 /* Info.plist */,
