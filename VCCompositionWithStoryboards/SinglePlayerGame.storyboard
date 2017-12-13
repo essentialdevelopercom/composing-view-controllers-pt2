@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5dG-h8-3Rb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PlayerOne-->
+        <scene sceneID="9Nh-vq-fpQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerOne" id="QnW-Db-JE6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5t-EF-J7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="-237"/>
+        </scene>
+        <!--Single Player-->
+        <scene sceneID="fbn-yQ-JVP">
+            <objects>
+                <viewController id="5dG-h8-3Rb" customClass="SinglePlayerViewController" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDk-Cg-l8l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wit-3w-Gd0">
+                                <rect key="frame" x="8" y="28" width="359" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="gpS-ul-7Y1"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="QnW-Db-JE6" kind="embed" identifier="Player" id="9WY-Zd-mmw"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wit-3w-Gd0" firstAttribute="leading" secondItem="oPL-cd-LsE" secondAttribute="leading" constant="8" id="KN2-q3-d1s"/>
+                            <constraint firstItem="Wit-3w-Gd0" firstAttribute="top" secondItem="oPL-cd-LsE" secondAttribute="top" constant="8" id="pXG-jw-rcI"/>
+                            <constraint firstItem="oPL-cd-LsE" firstAttribute="trailing" secondItem="Wit-3w-Gd0" secondAttribute="trailing" constant="8" id="txp-9E-40t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oPL-cd-LsE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Single Player" id="oiM-0D-9kV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZW-vR-ifM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="175"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="51n-z9-7su">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Score View Controller-->
+        <scene sceneID="5LA-lE-oCD">
+            <objects>
+                <viewController id="51n-z9-7su" customClass="PlayerScoreViewController" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MtP-LZ-C4q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZQ-E9-bD4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Mike" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZK-S0-PzR">
+                                        <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9,999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBd-Yn-OHh">
+                                        <rect key="frame" x="8" y="37" width="359" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bBd-Yn-OHh" firstAttribute="leading" secondItem="TZQ-E9-bD4" secondAttribute="leading" constant="8" id="GLP-ms-Utd"/>
+                                    <constraint firstAttribute="trailing" secondItem="bBd-Yn-OHh" secondAttribute="trailing" constant="8" id="HT4-Xb-xZB"/>
+                                    <constraint firstItem="5ZK-S0-PzR" firstAttribute="leading" secondItem="TZQ-E9-bD4" secondAttribute="leading" constant="8" id="UWH-7M-8IK"/>
+                                    <constraint firstAttribute="trailing" secondItem="5ZK-S0-PzR" secondAttribute="trailing" constant="8" id="ad3-Zu-4ee"/>
+                                    <constraint firstItem="bBd-Yn-OHh" firstAttribute="top" secondItem="5ZK-S0-PzR" secondAttribute="bottom" constant="8" id="be1-cV-E4j"/>
+                                    <constraint firstAttribute="height" constant="65" id="ef5-Zk-V8n"/>
+                                    <constraint firstAttribute="bottom" secondItem="bBd-Yn-OHh" secondAttribute="bottom" constant="8" id="hvD-nh-mgi"/>
+                                    <constraint firstItem="5ZK-S0-PzR" firstAttribute="top" secondItem="TZQ-E9-bD4" secondAttribute="top" constant="8" id="u5P-Zc-ojb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TZQ-E9-bD4" firstAttribute="leading" secondItem="CWv-oy-8ae" secondAttribute="leading" id="Dnv-Ny-1no"/>
+                            <constraint firstItem="CWv-oy-8ae" firstAttribute="trailing" secondItem="TZQ-E9-bD4" secondAttribute="trailing" id="GEK-tE-Nc3"/>
+                            <constraint firstItem="TZQ-E9-bD4" firstAttribute="top" secondItem="CWv-oy-8ae" secondAttribute="top" id="QDJ-ZQ-psf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CWv-oy-8ae"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="65"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="5ZK-S0-PzR" id="Mf7-ah-ONO"/>
+                        <outlet property="scoreLabel" destination="bBd-Yn-OHh" id="eDf-PL-gPm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vn-6j-Yx3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="18"/>
+        </scene>
+    </scenes>
+</document>

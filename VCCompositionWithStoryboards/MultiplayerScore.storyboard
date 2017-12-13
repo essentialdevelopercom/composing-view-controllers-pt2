@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5bI-Rw-BBn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PlayerOne-->
+        <scene sceneID="bSE-M1-JXI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerOne" id="OvZ-1Q-ojH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9M-in-2AO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73" y="62"/>
+        </scene>
+        <!--PlayerTwo-->
+        <scene sceneID="ohN-Lo-eAn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerTwo" id="H9T-RR-PrO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kch-gK-FwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="62"/>
+        </scene>
+        <!--Multiplayer Score View Controller-->
+        <scene sceneID="NJ5-pz-od3">
+            <objects>
+                <viewController id="5bI-Rw-BBn" customClass="MultiplayerScoreViewController" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="buR-tq-pXl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRw-6M-rIA">
+                                <rect key="frame" x="0.0" y="0.0" width="171" height="65"/>
+                                <connections>
+                                    <segue destination="OvZ-1Q-ojH" kind="embed" identifier="PlayerOne" id="TRu-NG-3rY"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPU-P4-8zJ">
+                                <rect key="frame" x="204.5" y="0.0" width="170.5" height="65"/>
+                                <connections>
+                                    <segue destination="H9T-RR-PrO" kind="embed" identifier="PlayerTwo" id="krK-Ha-1bf"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTt-Zj-hVh">
+                                <rect key="frame" x="179" y="22" width="17.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JPU-P4-8zJ" firstAttribute="width" secondItem="RRw-6M-rIA" secondAttribute="width" id="2bD-PO-fV3"/>
+                            <constraint firstItem="gky-73-Lwa" firstAttribute="bottom" secondItem="RRw-6M-rIA" secondAttribute="bottom" id="5no-VG-1Qr"/>
+                            <constraint firstItem="JPU-P4-8zJ" firstAttribute="leading" secondItem="oTt-Zj-hVh" secondAttribute="trailing" constant="8" id="9ss-ms-g4Q"/>
+                            <constraint firstItem="gky-73-Lwa" firstAttribute="bottom" secondItem="JPU-P4-8zJ" secondAttribute="bottom" id="9vD-G0-wFz"/>
+                            <constraint firstItem="gky-73-Lwa" firstAttribute="trailing" secondItem="JPU-P4-8zJ" secondAttribute="trailing" id="Cxw-yf-szE"/>
+                            <constraint firstItem="RRw-6M-rIA" firstAttribute="top" secondItem="gky-73-Lwa" secondAttribute="top" id="Dku-23-24c"/>
+                            <constraint firstItem="oTt-Zj-hVh" firstAttribute="leading" secondItem="RRw-6M-rIA" secondAttribute="trailing" constant="8" id="LyC-pX-CvZ"/>
+                            <constraint firstItem="RRw-6M-rIA" firstAttribute="leading" secondItem="gky-73-Lwa" secondAttribute="leading" id="XQm-OM-dJA"/>
+                            <constraint firstItem="JPU-P4-8zJ" firstAttribute="top" secondItem="gky-73-Lwa" secondAttribute="top" id="i3A-Pa-bpl"/>
+                            <constraint firstItem="oTt-Zj-hVh" firstAttribute="centerY" secondItem="gky-73-Lwa" secondAttribute="centerY" id="xgD-Ud-5Nx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gky-73-Lwa"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="65"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mNd-Yh-pcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>
